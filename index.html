@@ -1,3 +1,7 @@
+
+<!-- For your list items, get rid of the bullet points and the spacing on the left side of the lists -->
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,17 +14,21 @@
 
       h1 {
         margin-top: 0;
-/*        color: white;
-        background-color: blue;*/
         text-align: center;
         font-family: 'Shadows Into Light', cursive;
+        font-size: 56px;
 
+        /*       Box model Properites */
+        /*  width: 400px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px; */
+      }
 
-/*        width: 400px;
-        height: 200px;
-        border: 5px solid black;
-        padding: 10px;
-        margin: 20px;*/
+      h2 {
+        border-bottom: 1px solid gray;
+        padding-bottom: 6px;
       }
 
       .like-heading {
@@ -37,6 +45,20 @@
         height: 200px;
       }
 
+      .container {
+        width: 640px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      li {
+        list-style-type: none;
+      }
+      ul {
+        padding-left: 0;
+        margin-bottom: 48px;
+      }
+
     </style>
   </head>
   <body>
@@ -44,29 +66,33 @@
       <h1>Arjun and Shannon</h1>
     </div>
 
-    <h2 class="like-heading">Things we like</h2>
-    <ul>
-      <li>
-        <a href="http://allrecipes.com/recipe/puppy-chow/">Puppy Chow</a>
-      </li>
-      <li><strong>Naps</strong></li>
-      <li>
-        <a href="http://www.sylvanesso.com/">
-          <img src="http://www.brooklynvegan.com/img/bp/rough-sylvan.jpg" width="200" alt="sylvan esso">
-        </a>
-      </li>
-    </ul>
+    <div class="container">
+      <h2 class="like-heading">Things we like</h2>
+      <ul>
+        <li>
+          <a href="http://allrecipes.com/recipe/puppy-chow/">Puppy Chow</a>
+        </li>
+        <li><strong>Naps</strong></li>
+        <li>
+          <a href="http://www.sylvanesso.com/">
+            <img src="http://www.brooklynvegan.com/img/bp/rough-sylvan.jpg" width="200" alt="sylvan esso">
+          </a>
+        </li>
+      </ul>
 
 
-    <h2 class="dislike-heading">Things we don't like</h2>
-    <ul>
-      <li>Finding parking close to 30 N</li>
-      <li>
-        <img width="200" src="http://theexpiredmeter.com/wp-content/uploads/2009/11/Lustkillers09.jpg" alt="parking ticket">
-      </li>
-      <li>Getting your car towed</li>
-    </ul>
+      <h2 class="dislike-heading">Things we don't like</h2>
+      <ul>
+        <li>Finding parking close to 30 N</li>
+        <li>
+          <img width="200" src="http://theexpiredmeter.com/wp-content/uploads/2009/11/Lustkillers09.jpg" alt="parking ticket">
+        </li>
+        <li>Getting your car towed</li>
+      </ul>
 
-    <p>this is my second line!</p>
+      <p>this is my second line!</p>
+
+    </div>
+
   </body>
 </html>
